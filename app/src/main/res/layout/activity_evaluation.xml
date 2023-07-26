@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EvaluationActivity">
+
+    <ScrollView
+        android:id="@+id/sV_Evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/button_saveEvaluation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewFrage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/evaluation_Frage1"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rG_Frage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <RadioButton
+                    android:id="@+id/rB_F1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF1"
+                    android:text="Ausbildung" />
+
+                <RadioButton
+                    android:id="@+id/rB_F1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF1"
+                    android:text="Beruf/Arbeitsstätte" />
+
+                <RadioButton
+                    android:id="@+id/rB_F1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF1"
+                    android:text="Einkauf" />
+
+                <RadioButton
+                    android:id="@+id/rB_F1_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF1"
+                    android:text="Erledigung" />
+
+                <RadioButton
+                    android:id="@+id/rB_F1_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF1"
+                    android:text="Freizeit" />
+
+                <RadioButton
+                    android:id="@+id/rB_F1_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF1"
+                    android:text="Wohnen" />
+
+                <RadioButton
+                    android:id="@+id/rB_F1_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF1"
+                    android:text="Sonstiges" />
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textViewFrage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/evaluation_Frage2"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rG_Frage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <RadioButton
+                    android:id="@+id/rB_F2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF2"
+                    android:text="Viele Sitzplätze frei" />
+
+                <RadioButton
+                    android:id="@+id/rB_F2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF2"
+                    android:text="Einige Sitzplätze frei" />
+
+                <RadioButton
+                    android:id="@+id/rB_F2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF2"
+                    android:text="Keine Sitzplätze frei, Stehplätze verfügbar" />
+
+                <RadioButton
+                    android:id="@+id/rB_F2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF2"
+                    android:text="Fahrzeug voll (man steht direkt an der Tür)" />
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textViewFrage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/evaluation_Frage3"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rG_Frage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <RadioButton
+                    android:id="@+id/rB_F3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF3"
+                    android:text="Stimme voll zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF3"
+                    android:text="Stimme größtenteils zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF3"
+                    android:text="Stimme eher zu" />
+                <RadioButton
+                    android:id="@+id/rB_F3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF3"
+                    android:text="Stimme eher nicht zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F3_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF3"
+                    android:text="Stimme größtenteils nicht zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F3_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF3"
+                    android:text="Stimme überhaupt nicht zu" />
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textViewFrage4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/evaluation_Frage4"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rG_Frage4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <RadioButton
+                    android:id="@+id/rB_F4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF4"
+                    android:text="Stimme voll zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF4"
+                    android:text="Stimme größtenteils zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F4_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF4"
+                    android:text="Stimme eher zu" />
+                <RadioButton
+                    android:id="@+id/rB_F4_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF4"
+                    android:text="Stimme eher nicht zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F4_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF4"
+                    android:text="Stimme größtenteils nicht zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F4_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF4"
+                    android:text="Stimme überhaupt nicht zu" />
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textViewFrage5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/evaluation_Frage5"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rG_Frage5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <RadioButton
+                    android:id="@+id/rB_F5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF5"
+                    android:text="Stimme voll zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF5"
+                    android:text="Stimme größtenteils zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F5_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF5"
+                    android:text="Stimme eher zu" />
+                <RadioButton
+                    android:id="@+id/rB_F5_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF5"
+                    android:text="Stimme eher nicht zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F5_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF5"
+                    android:text="Stimme größtenteils nicht zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F5_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF5"
+                    android:text="Stimme überhaupt nicht zu" />
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textViewFrage6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/evaluation_Frage6"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rG_Frage6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <RadioButton
+                    android:id="@+id/rB_F6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF6"
+                    android:text="Stimme voll zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F6_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF6"
+                    android:text="Stimme größtenteils zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F6_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF6"
+                    android:text="Stimme eher zu" />
+                <RadioButton
+                    android:id="@+id/rB_F6_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF6"
+                    android:text="Stimme eher nicht zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F6_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF6"
+                    android:text="Stimme größtenteils nicht zu" />
+
+                <RadioButton
+                    android:id="@+id/rB_F6_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClickedF6"
+                    android:text="Stimme überhaupt nicht zu" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_saveEvaluation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:text="Speichern"
+        android:textColor="#FFFFFF"
+        app:icon="@drawable/baseline_save_24"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

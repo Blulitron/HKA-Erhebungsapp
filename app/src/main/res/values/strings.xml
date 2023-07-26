@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HKA Erhebung-App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Erhebung-App</string>
+    <string name="nav_header_subtitle">für ÖPNV-Studie</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_wipe">Alle Daten löschen</string>
+
+    <string name="menu_start">Startseite</string>
+    <string name="menu_export">Exportieren &amp; Senden</string>
+    <string name="menu_about">Über</string>
+
+    <string name="button_newJourney">Neue Route anlegen</string>
+
+    <string name="evaluation_Frage1">Bitte gebe deinen Wegezweck an:</string>
+    <string name="evaluation_Frage2">Wie voll war das Fahrzeug, in welchem du mitgefahren bist?</string>
+    <string name="evaluation_Frage3">Die Fahrt war angenehm.</string>
+    <string name="evaluation_Frage4">Während der Fahrt habe ich mich geärgert.</string>
+    <string name="evaluation_Frage5">Während der Fahrt war ich gestresst.</string>
+    <string name="evaluation_Frage6">Während der Fahrt habe ich zwischendurch mal gelächelt/gelacht.</string>
+</resources>
